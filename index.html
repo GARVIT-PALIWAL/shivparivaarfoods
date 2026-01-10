@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,53 +5,14 @@
     <title>SHIVPARIVAR FOODS & BEVERAGE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="SHIVPARIVAR FOODS & BEVERAGE provides pure, safe, and refreshing packaged drinking water.">
+    <link rel="stylesheet" href="style.css">
 
     <style>
-        /* RESET */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        body {
-            background-color: #ffffff;
-            color: #333;
-        }
-
-        /* HEADER / NAVBAR */
-        header {
-            position: sticky;
-            top: 0;
-            background-color: #0056b3;
-            padding: 15px 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 1000;
-        }
-
-        header .logo {
-            color: #ffffff;
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        header nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-
-        header nav ul li a {
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        header nav ul li a:hover {
-            color: #ffdddd;
+        /* HOME PAGE SPECIFIC STYLES */
+        
+        /* HEADER - Custom for home page */
+        header.navbar .logo span {
+            display: none;
         }
 
         /* HERO SECTION */
@@ -169,6 +128,10 @@
         }
 
         /* QUALITY */
+        .quality {
+            text-align: center;
+        }
+
         .quality ul {
             list-style: none;
             max-width: 600px;
@@ -189,8 +152,13 @@
             text-align: center;
         }
 
+        .cta h2 {
+            color: #ffffff;
+        }
+
         .cta p {
             margin-bottom: 20px;
+            color: #ffffff;
         }
 
         /* FOOTER */
@@ -202,65 +170,122 @@
             font-size: 14px;
         }
 
-        /* WHATSAPP FLOAT */
-        .whatsapp-float {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25D366;
-            color: #ffffff;
-            padding: 12px 18px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-        }
-
-        /* RESPONSIVE */
+        /* RESPONSIVE FOR HOME PAGE */
         @media (max-width: 768px) {
-            header nav ul {
+            header.navbar {
+                padding: 15px 20px;
+            }
+
+            header.navbar nav ul {
                 gap: 12px;
+                font-size: 14px;
             }
 
             .hero h1 {
                 font-size: 28px;
             }
+
+            .hero .tagline {
+                font-size: 16px;
+            }
+
+            .hero p {
+                font-size: 14px;
+            }
+
+            section {
+                padding: 40px 15px;
+            }
+
+            section h2 {
+                font-size: 24px;
+            }
+
+            .card-container {
+                gap: 20px;
+            }
         }
-        /* LOGO AREA */
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: bold;
-}
 
-.logo img {
-    height: 45px;
-    width: auto;
-}
+        @media (max-width: 480px) {
+            header.navbar {
+                padding: 12px 15px;
+            }
 
+            header.navbar .logo img {
+                height: 40px;
+            }
+
+            header.navbar nav ul {
+                gap: 10px;
+                font-size: 12px;
+            }
+
+            .hero {
+                padding: 60px 15px;
+            }
+
+            .hero h1 {
+                font-size: 22px;
+            }
+
+            .hero .tagline {
+                font-size: 14px;
+            }
+
+            .hero p {
+                font-size: 13px;
+            }
+
+            section {
+                padding: 30px 12px;
+            }
+
+            section h2 {
+                font-size: 20px;
+            }
+
+            .about-preview p {
+                font-size: 13px;
+            }
+
+            .btn {
+                padding: 10px 18px;
+                font-size: 13px;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 280px;
+            }
+
+            .quality li {
+                padding: 10px;
+                font-size: 13px;
+            }
+
+            .cta p {
+                font-size: 13px;
+            }
+        }
     </style>
 </head>
 <body>
 
 <!-- HEADER -->
-<header>
+<header class="navbar">
     <div class="logo">
-        <img src="logo.png" alt="SHIVPARIVAR FOODS Logo">
+        <a href="index.html"><img src="logo.png" alt="SHIVPARIVAR FOODS Logo"></a>
         <span>SHIVPARIVAR FOODS</span>
     </div>
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="products.html">Products</a></li>
             <li><a href="contacts.html">Contact</a></li>
         </ul>
     </nav>
 </header>
-
 
 <!-- HERO -->
 <section class="hero">
@@ -328,76 +353,5 @@
     Pure. Safe. Refreshing.
 </footer>
 
-<!-- WHATSAPP FLOAT -->
-<a href="https://wa.me/918115340375" class="whatsapp-float">WhatsApp</a>
-
 </body>
 </html>
-
-
-
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHIVPARIVAR FOODS & BEVERAGE</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<header class="navbar">
-    <div class="logo">
-        <a href="index.html"><img src="logo.png" alt="SHIVPARIVAR FOODS Logo"></a>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="contacts.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-    <section class="hero">
-    <h1>SHIVPARIVAR FOODS & BEVERAGE</h1>
-    <p class="tagline">Pure. Safe. Refreshing.</p>
-    <p class="hero-text">
-        Delivering high-quality packaged drinking water through advanced purification and hygienic practices.
-    </p>
-</section>
-
-<section class="intro">
-    <h2>About Us</h2>
-    <p>
-        SHIVPARIVAR FOODS & BEVERAGE is committed to providing clean, safe, and refreshing packaged drinking water
-        that meets regulatory standards and customer trust.
-    </p>
-</section>
-
-<section class="products-preview">
-    <h2>Our Products</h2>
-    <div class="card-container">
-        <div class="card">
-            <img src="cleer.png" alt="CLEER Water">
-            <h3>CLEER – Total Fresh</h3>
-            <p>Ozonized packaged drinking water with added minerals.</p>
-            <a href="cleer.html" class="btn">View Details</a>
-        </div>
-
-        <div class="card">
-            <img src="rapid.png.jpeg" alt="RAPID Aqua">
-            <h3>RAPID – Aqua</h3>
-            <p>Clean, safe, and refreshing drinking water.</p>
-            <a href="rapid.html" class="btn">View Details</a>
-        </div>
-    </div>
-</section>
-
-</body>
-<footer class="footer">
-    <p>© 2026 SHIVPARIVAR FOODS & BEVERAGE. All Rights Reserved.</p>
-    <p>Pure. Safe. Refreshing.</p>
-</footer> -->
