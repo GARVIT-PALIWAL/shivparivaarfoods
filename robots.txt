@@ -1,0 +1,13 @@
+# Robots configuration for SHIVPARIVAR FOODS & BEVERAGES
+# Replace REPLACE_WITH_YOUR_DOMAIN with your actual domain before submitting to search consoles
+
+User-agent: *
+Disallow:
+
+# Allow all crawlers to access everything. If you need to block paths, add them above.
+
+# Sitemap location (replace with actual domain)
+Sitemap: https://garvit-paliwal.github.io/shivparivarfoods/sitemap.xml
+
+# Optional: add a crawl delay for aggressive crawlers
+# Crawl-delay: 10

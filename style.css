@@ -69,7 +69,7 @@ section {
 }
 
 h2, h1 {
-    color: #0056b3;
+    color: #ffffff;
     margin-bottom: 20px;
 }
 /* ABOUT PREVIEW - Removed duplicate, home page uses inline styles */
@@ -93,6 +93,56 @@ h2, h1 {
     margin-top: 50px;
     font-size: 14px;
 }
+.footer .social {
+    margin-top: 8px;
+    font-size: 14px;
+}
+.footer .social a {
+    color: #ffdddd;
+    text-decoration: none;
+    margin: 0 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    background: transparent;
+}
+.footer .social a svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
+.footer .social a:hover {
+    background: rgba(255,255,255,0.06);
+    color: #ffffff;
+}
+/* Follow Us section icon sizing (contacts page) */
+.follow-us .social {
+    margin-top: 8px;
+}
+.follow-us .social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    margin: 0 8px;
+    color: #0056b3;
+    background: #f1f5fb;
+    text-decoration: none;
+}
+.follow-us .social a svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
+.follow-us .social a:hover {
+    background: #e1e9f8;
+    color: #003f8a;
+}
 
 /* CARDS - For use on other pages if needed */
 .card-container {
@@ -114,8 +164,10 @@ h2, h1 {
 
 .card img {
     width: 100%;
-    height: auto;
-}
+    height: 220px;
+    object-fit: contain;
+    display: block;
+} 
 
 .card h3 {
     margin: 15px 0;
@@ -180,6 +232,11 @@ h2, h1 {
     .card {
         width: 100%;
         max-width: 280px;
+    }
+
+    .card img {
+        height: 180px;
+        object-fit: contain;
     }
 
     .btn {
@@ -662,3 +719,22 @@ h2, h1 {
     }
 }
 
+
+
+.pricing-section {
+    margin-top: 20px;
+}
+
+.pricing-section h2 {
+    color: #0a4da2;
+}
+
+.pricing-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pricing-section li {
+    font-size: 16px;
+    padding: 6px 0;
+}
